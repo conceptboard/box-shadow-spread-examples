@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+::-moz-selection{ text-shadow: none; background: #2c89ef; color: #fff;}
+::selection { text-shadow: none; background: #2c89ef; color: #fff;}
+
+
+/* ############################### HEADER ############################### */
+
+#header {
+    background: #666 url(../images/noise-light_195x195.png);
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+#header::after {
+    content: "";
+    background: url(../images/spike.png) repeat-x;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#header .gradient {
+    content: "";
+    position: absolute;
+    left: 350px;
+    top: -50px;
+    width: 200px;
+    height: 1px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 280px 100px rgba(255, 255, 255, 0.5);
+}
+
+#header a.bloglink {
+    display: block;
+    line-height: 1.5em;
+    width: 110px;
+    color: #fff;
+    background: #555;
+    border-radius: 15px;
+    padding: 60px 20px 20px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    bottom: 28px;
+    text-decoration: none;
+    box-shadow: inset 0px 0px 20px #444;
+}
+
+#header a.bloglink:hover {
+    background: #585858;
+    box-shadow: -1px -1px 2px rgba(255,255,255,0.5), 1px 1px 2px #333;
+}
+
+#header a.bloglink strong {
+    display: block;
+    margin-bottom: 10px;
+}
+    
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    line-height: 95px;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+    color: #444;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-align: center;
+    position: relative;
+}
+
+h1 .spread {
+    color: #dc322f;
+    line-height: 145px;
+    font-size: 215px;
+    text-shadow: -2px -2px 1px #7a0000, 2px 2px 1px #ed9897;
+}
+
+
+/* ############################## CONTENT ############################### */
+
+#content {
+    padding-bottom: 30px;
+    font-size: 13px;
+}
+
+#info {
+    padding: 15px;
+    background: #666 url(../images/noise-light_195x195.png);
+    margin: 40px 0;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px 5px #555;
+    text-shadow: -1px -1px 0 #333;
+}
+
+#info h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#info ul {
+    padding: 0;
+    margin: 0 0 0 20px;
+}
+
+#info ul li {
+    margin-bottom: 3px;
+}
+
+#info pre {
+    display: inline;
+    font-size: 13px;
+}
+
+#content h3 {
+    font-family: 'Yanone Kaffeesatz', arial, serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+}
+
+#content .example {
+    float: left;
+    margin: 10px 60px 60px 0;
+}
+#content .example.last { margin-right: 0px; }
+#content .example .legend {
+    margin-top: 10px;
+}
+
+#content .box {
+    width: 220px;
+    padding: 30px;
+    background: #ddd;
+    border-radius: 5px;
+    height: 160px;
+    text-align: center;
+}
+#content .box:hover { background: transparent; }
+
+
+#shadow_demo .box { box-shadow: 0 0 10px #555; }
+#shadow_demo .box.spread { box-shadow: 0 0 10px 10px #555; }
+#shadow_demo .box.spread_neg { box-shadow: 0 0 10px -10px #555; }
+
+#shadow_demo2 .box { box-shadow: 0 10px 10px #555; }
+#shadow_demo2 .box.spread { box-shadow: 0 10px 10px -10px #555 }
+#shadow_demo2 .box.inset { box-shadow: inset 0 -10px 10px -10px #555 }
+
+#shadow_inner .box.inset { box-shadow: inset 0px 0px 10px #555 }
+#shadow_inner .box.spead.inset { box-shadow: inset 0px 0px 10px 10px #555 }
+#shadow_inner .box.four { box-shadow: inset 0 -20px 10px -4px #555, inset -20px 0px 10px -8px #555, inset 0 20px 10px -16px #555, inset 20px 0px 10px -16px #555; }
+
+#shadow_outer {
+	clear: both;
+}
+
+#shadow_extreme .box.floating {
+	box-shadow:
+		0 0px 7px 30px #fff,
+		0 20px 20px 10px #aaa;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 400ms;
+	-moz-transition-property: all;
+    -moz-transition-duration: 400ms;
+}
+
+#shadow_extreme .box.floating:hover {
+    background-color: #ddd;
+	margin-top: 70px;
+	box-shadow:
+		0 -49px 4px 50px #fff,
+		0 -4px 10px 5px #555;
+    margin-bottom: -70px;
+}
+
+#shadow_extreme .box.bigshadow { box-shadow: 0 0 100px -30px #555;}
+#shadow_extreme .box.rainbow { box-shadow: 0 0 1px 2px purple, 0 0 1px 4px blue, 0 0 1px 6px green, 0 0 1px 8px yellow, 0 0 1px 10px orange, 0 0 1px 12px red; }
+
+
+/* ############################### FOOTER ############################### */
+
+#footer {
+    clear: both;
+    position: relative;
+    margin-top: 30px;
+    box-shadow: 0 -4px 70px -20px #555;
+    padding: 30px 0;
+    font-size: 13px;
+    color: #999;
+}
+
+#footer::before {
+    content: "";
+    background: url(../images/spike.png) repeat-x;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -6px;
+}
+
+
+/* ######################## SYNTAX HIGHLIGHTING ######################### */
+
+pre {
+    text-align: left;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.legend pre {
+    display: inline;
+}
+
+pre .property {
+    color: #069;
+    font-weight: bold;
+}
+
+pre .value {
+    display: block;
+    color: #008200;
+}
+
+pre .spread {
+    color: #DC322F;
+    background: #fff;
+    padding: 0px 4px;
+    border-radius: 3px;
+    text-shadow: none;
+    font-style: normal;
+}
+
+.box:hover pre .spread {
+    box-shadow: 0 0 1px 1px rgba(255,0,0,0.3);
+}
+
+
+/* ############################# THE REST ############################# */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ .clearfix { display: inline-block; }
+ html[xmlns] .clearfix { display: block;}
+ * html .clearfix { height: 1%;}
+ 
+ a { color: blue; text-shadow: none }
+ a:hover { text-decoration: none }
