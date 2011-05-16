@@ -131,13 +131,13 @@ h1 .spread {
 }
 
 #info ul li {
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 #info pre {
     display: inline;
     font-size: 13px;
-    line-height: auto;
+    line-height: 1em;
 }
 
 #content h3 {
