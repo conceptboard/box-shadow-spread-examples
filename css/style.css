@@ -140,6 +140,15 @@ h1 .spread {
     line-height: 1em;
 }
 
+#info .socialMedia {
+    margin-top: 20px;
+    height: 20px;
+}
+
+#info .socialMedia .facebookLike { float: left; }
+#info .socialMedia .tweetThis { float: left; margin-right: 5px;}
+
+
 #content h3 {
     font-family: 'Yanone Kaffeesatz', arial, serif;
     text-transform: uppercase;
