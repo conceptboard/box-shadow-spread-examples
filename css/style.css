@@ -33,8 +33,12 @@ body {
     top: -50px;
     width: 200px;
     height: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.35);
+    -webkit-box-shadow: 0 0 280px 100px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 0 0 280px 100px rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 280px 100px rgba(255, 255, 255, 0.5);
 }
 
@@ -44,6 +48,8 @@ body {
     width: 110px;
     color: #fff;
     background: #555;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
     border-radius: 15px;
     padding: 60px 20px 20px;
     position: absolute;
@@ -51,12 +57,15 @@ body {
     top: 30px;
     bottom: 28px;
     text-decoration: none;
+    -webkit-box-shadow: inset 0px 0px 20px #444;
+    -moz-box-shadow: inset 0px 0px 20px #444;
     box-shadow: inset 0px 0px 20px #444;
 }
 
 #header a.bloglink:hover {
-    background: #585858;
-    box-shadow: -1px -1px 2px rgba(255,255,255,0.5), 1px 1px 2px #333;
+    -webkit-box-shadow: inset 0px 0px 20px 20px #444;
+    -moz-box-shadow: inset 0px 0px 20px 20px #444;
+    box-shadow: inset 0px 0px 20px 20px #444;
 }
 
 #header a.bloglink strong {
@@ -101,7 +110,11 @@ h1 .spread {
     background: #666 url(../images/noise-light_195x195.png);
     margin: 40px 0;
     color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 10px 5px #555;
+    -moz-box-shadow: inset 0 0 10px 5px #555;
     box-shadow: inset 0 0 10px 5px #555;
     text-shadow: -1px -1px 0 #333;
 }
@@ -151,17 +164,55 @@ h1 .spread {
 #content .box:hover { background: transparent; }
 
 
-#shadow_demo .box { box-shadow: 0 0 10px #555; }
-#shadow_demo .box.spread { box-shadow: 0 0 10px 10px #555; }
-#shadow_demo .box.spread_neg { box-shadow: 0 0 10px -10px #555; }
+#shadow_demo .box {
+    -webkit-box-shadow: 0 0 10px #555;
+    -moz-box-shadow: 0 0 10px #555;
+    box-shadow: 0 0 10px #555;
+}
+#shadow_demo .box.spread {
+    -webkit-box-shadow: 0 0 10px 10px #555;
+    -moz-box-shadow: 0 0 10px 10px #555;
+    box-shadow: 0 0 10px 10px #555;
+}
+#shadow_demo .box.spread_neg {
+    -webkit-box-shadow: 0 0 10px -10px #555;
+    -moz-box-shadow: 0 0 10px -10px #555;
+    box-shadow: 0 0 10px -10px #555;
+}
 
-#shadow_demo2 .box { box-shadow: 0 10px 10px #555; }
-#shadow_demo2 .box.spread { box-shadow: 0 10px 10px -10px #555 }
-#shadow_demo2 .box.inset { box-shadow: inset 0 -10px 10px -10px #555 }
 
-#shadow_inner .box.inset { box-shadow: inset 0px 0px 10px #555 }
-#shadow_inner .box.spead.inset { box-shadow: inset 0px 0px 10px 10px #555 }
-#shadow_inner .box.four { box-shadow: inset 0 -20px 10px -4px #555, inset -20px 0px 10px -8px #555, inset 0 20px 10px -16px #555, inset 20px 0px 10px -16px #555; }
+#shadow_demo2 .box {
+    -webkit-box-shadow: 0 10px 10px #555;
+    -moz-box-shadow: 0 10px 10px #555;
+    box-shadow: 0 10px 10px #555;
+}
+#shadow_demo2 .box.spread {
+    -webkit-box-shadow: 0 10px 10px -10px #555;
+    -moz-box-shadow: 0 10px 10px -10px #555;
+    box-shadow: 0 10px 10px -10px #555;
+}
+#shadow_demo2 .box.inset {
+    -webkit-box-shadow: inset 0 -10px 10px -10px #555;
+    -moz-box-shadow: inset 0 -10px 10px -10px #555;
+    box-shadow: inset 0 -10px 10px -10px #555;
+}
+
+
+#shadow_inner .box.inset {
+    -webkit-box-shadow: inset 0px 0px 10px #555;
+    -moz-box-shadow: inset 0px 0px 10px #555;
+    box-shadow: inset 0px 0px 10px #555;
+}
+#shadow_inner .box.spead.inset {
+    -webkit-box-shadow: inset 0px 0px 10px 10px #555;
+    -moz-box-shadow: inset 0px 0px 10px 10px #555;
+    box-shadow: inset 0px 0px 10px 10px #555;
+}
+#shadow_inner .box.four {
+    -webkit-box-shadow: inset 0 -20px 10px -4px #555, inset -20px 0px 10px -8px #555, inset 0 20px 10px -16px #555, inset 20px 0px 10px -16px #555;
+    -moz-box-shadow: inset 0 -20px 10px -4px #555, inset -20px 0px 10px -8px #555, inset 0 20px 10px -16px #555, inset 20px 0px 10px -16px #555;
+    box-shadow: inset 0 -20px 10px -4px #555, inset -20px 0px 10px -8px #555, inset 0 20px 10px -16px #555, inset 20px 0px 10px -16px #555;
+}
 
 #shadow_outer {
 	clear: both;
@@ -180,14 +231,22 @@ h1 .spread {
 #shadow_extreme .box.floating:hover {
     background-color: #ddd;
 	margin-top: 70px;
-	box-shadow:
-		0 -49px 4px 50px #fff,
-		0 -4px 10px 5px #555;
+	-webkit-box-shadow: 0 -49px 4px 50px #fff, 0 -4px 10px 5px #555;
+	-moz-box-shadow: 0 -49px 4px 50px #fff, 0 -4px 10px 5px #555;
+	box-shadow: 0 -49px 4px 50px #fff, 0 -4px 10px 5px #555;
     margin-bottom: -70px;
 }
 
-#shadow_extreme .box.bigshadow { box-shadow: 0 0 100px -30px #555;}
-#shadow_extreme .box.rainbow { box-shadow: 0 0 1px 2px purple, 0 0 1px 4px blue, 0 0 1px 6px green, 0 0 1px 8px yellow, 0 0 1px 10px orange, 0 0 1px 12px red; }
+#shadow_extreme .box.bigshadow {
+    -webkit-box-shadow: 0 0 100px -30px #555;
+    -moz-box-shadow: 0 0 100px -30px #555;
+    box-shadow: 0 0 100px -30px #555;
+}
+#shadow_extreme .box.rainbow {
+    -webkit-box-shadow: 0 0 1px 2px purple, 0 0 1px 4px blue, 0 0 1px 6px green, 0 0 1px 8px yellow, 0 0 1px 10px orange, 0 0 1px 12px red;
+    -moz-box-shadow: 0 0 1px 2px purple, 0 0 1px 4px blue, 0 0 1px 6px green, 0 0 1px 8px yellow, 0 0 1px 10px orange, 0 0 1px 12px red;
+    box-shadow: 0 0 1px 2px purple, 0 0 1px 4px blue, 0 0 1px 6px green, 0 0 1px 8px yellow, 0 0 1px 10px orange, 0 0 1px 12px red;
+}
 
 
 /* ############################### FOOTER ############################### */
@@ -196,6 +255,8 @@ h1 .spread {
     clear: both;
     position: relative;
     margin-top: 30px;
+    -webkit-box-shadow: 0 -4px 70px -20px #555;
+    -moz-box-shadow: 0 -4px 70px -20px #555;
     box-shadow: 0 -4px 70px -20px #555;
     padding: 30px 0;
     font-size: 13px;
@@ -239,12 +300,16 @@ pre .spread {
     color: #DC322F;
     background: #fff;
     padding: 0px 4px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border-radius: 3px;
     text-shadow: none;
     font-style: normal;
 }
 
 .box:hover pre .spread {
+    -webkit-box-shadow: 0 0 1px 1px rgba(255,0,0,0.3);
+    -moz-box-shadow: 0 0 1px 1px rgba(255,0,0,0.3);
     box-shadow: 0 0 1px 1px rgba(255,0,0,0.3);
 }
 
