@@ -66,6 +66,7 @@ body {
     -webkit-box-shadow: inset 0px 0px 20px 20px #444;
     -moz-box-shadow: inset 0px 0px 20px 20px #444;
     box-shadow: inset 0px 0px 20px 20px #444;
+    color: #ccc;
 }
 
 #header a.bloglink strong {
@@ -136,6 +137,7 @@ h1 .spread {
 #info pre {
     display: inline;
     font-size: 13px;
+    line-height: auto;
 }
 
 #content h3 {
